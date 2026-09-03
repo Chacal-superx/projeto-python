@@ -1,8 +1,14 @@
-# app.py - meu primeiro programa Python
-nome = "João"
-print(f"Olá, {nome}! Bem-vindo ao mundo Python.")
+# app.py - versão interativa
 
-ano_nascimento = 1990  # altere para seu ano de nascimento
+nome = input("Qual é o seu nome? ")
+ano_nascimento = int(input("Em que ano você nasceu? "))
 ano_atual = 2026
+
 idade = ano_atual - ano_nascimento
-print(f"Você tem aproximadamente {idade} anos.")
+
+print(f"Olá, {nome}! Você tem aproximadamente {idade} anos.")
+
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
